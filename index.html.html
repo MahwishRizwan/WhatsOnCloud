@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsOnCloudS</title>
+    <link rel="stylesheet" href="whatsOnCloud.css" />
+  </head>
+  <body>
+    <h1>WHAT'S ON CLOUD</h1>
+    <div class="clock">
+        <div class="numbers">
+          <div class="twelve">12</div>
+          <div class="three">3</div> 
+          <div class="six">6</div>
+          <div class="nine">9</div>
+        </div>
+        <div class="arrows">
+          <div class="hour"></div>
+          <div class="minute"></div>
+          <div class="second"></div>
+        </div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Rolex_logo.svg/1200px-Rolex_logo.svg.png"
+          alt=""
+        />
+      </div>
+      <script src="clock.js"></script>
+    <div class="container">
+      <h2>KNOW BEFORE YOU GO</h2>
+      <form>
+        <input type="text" id="city-input" placeholder="Enter City" />
+        <input type="submit" value="Get Weather" />
+      </form>
+      <div id="weather-data">
+        <div class="icon">
+          <!-- <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon"> -->
+        </div> 
+        <div class="temperature"></div>
+        <div class="description"></div>
+        <div class="details">
+          <!-- <div>Feels like: 23°C</div>
+                <div>Humidity: 40%</div>
+                <div>Wind speed: 5 m/s</div> -->
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
