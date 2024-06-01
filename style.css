@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    margin-top: 25px;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #bed7d2;
+  }
+  h1 {
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+  }
+  
+  img {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    z-index: 2;
+  }
+  
+  .clock {
+    width: 350px;
+    height: 350px;
+    background-color: lightgray;
+    border-radius: 100%;
+    border: 5px solid darkgrey;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7);
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  
+  .numbers div {
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+  }
+  
+  .twelve {
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .three {
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .six {
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nine {
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .arrows {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: darkgreen;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    z-index: 4;
+  }
+  
+  .arrows div {
+    width: 7px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    bottom: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom center;
+    z-index: 3;
+  }
+  
+  .arrows .hour {
+    height: 80px;
+    transform: rotate(30deg);
+  }
+  
+  .arrows .second {
+    background-color: goldenrod;
+    transform: rotate(250deg);
+   
+  }
+  .container {
+    background-color: lightgray;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+  }
+  
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  .icon img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .description{
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+  .details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  
+  .details > div{
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin: 10px;
+      flex: 1;
+      border-radius: 5px;
+      text-align: center;
+      min-height: 45px;
+  }
+  
+  @media (max-width: 768px){
+      form {
+          flex-direction: column;
+      }
+  
+      form input[type="text"]{
+          width: 100%;
+          margin-bottom: 10px;
+      }
+  }
